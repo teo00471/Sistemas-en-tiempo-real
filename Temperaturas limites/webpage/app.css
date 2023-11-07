@@ -1,0 +1,120 @@
+header {
+    background-color: #cf1414;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Courier New', monospace;
+}
+
+#send_threshold {
+    display: inline-block;
+    background-color: #e7f2f8;
+    color: #000000;
+    border: 2px solid #5658bd;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    font-family: 'Courier New', monospace;
+}
+
+#send_threshold:hover {
+    background-color: #5658bd;
+    color: #fff;
+}
+
+#WiFiConnect {
+    text-align: left;
+    margin-top: 50px;
+    padding-left: 150px;
+    font-family: 'Courier New', monospace;
+}
+
+#DHT22Sensor {
+    text-align: left;
+    margin-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: 'Courier New', monospace;
+}
+
+.Inputs {
+    padding-bottom: 10px;
+}
+
+#threshold {
+    border-radius: 10px;
+    border-color: #5658bd;
+    width: 160px;
+    height: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+#temperatura_min {
+    border-radius: 10px;
+    border-color: #d74848;
+    width: 160px;
+    height: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+#temperatura_max {
+    border-radius: 10px;
+    border-color: #d74848;
+    width: 160px;
+    height: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+#DHT22Sensor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sensor-block {
+    text-align: center;
+}
+
+.sensor-label {
+    display: block;
+}
+
+#temperature_reading {
+	display:inline;
+	color: #1d3557;
+}
+
+footer {
+
+    padding: 10px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #000000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.buttons {
+    padding: 5px;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}

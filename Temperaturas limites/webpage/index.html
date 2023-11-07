@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<script src='jquery-3.3.1.min.js'></script>
+		<link rel="stylesheet" href="app.css">
+		<script async src="app.js"></script>
+		<title>Limites de temperatura</title>
+	</head>
+	<body>
+	<header>
+		<h1>Limite temperatura</h1>
+	</header>
+		
+
+	<div id="DHT22Sensor">
+        <div class="sensor-block">
+            <h2>Lectura de temperatura</h2>
+            <label for="temperature_reading">TEMPERATURA: </label>
+            <div id="temperature_reading"></div>
+        </div>
+		
+	<div id="WiFiConnect">
+		<h2>ESP32 WiFi Connect</h2>
+		<section>
+			<input id="connect_ssid" type="text" maxlength="32" placeholder="SSID" value="">
+			<input id="connect_pass" type="password" maxlength="64" placeholder="Password" value="">
+			<input type="checkbox" onclick="showPassword()">Show Password
+		</section>
+		<div class="buttons">
+			<input id="connect_wifi" type="button" value="Connect" />
+		</div>
+		<div id="wifi_connect_credentials_errors"></div>
+		<h4 id="wifi_connect_status"></h4>
+	</div>
+
+	<div id="WiFiConnect">
+        <h2>Configuracion Limites de temperatura</h2>
+        <div class="Inputs">
+            <input id="threshold_1" type="number" step="1" placeholder="temperatura minima">
+			<input id="threshold_2" type="number" placeholder="temperatura maxima">
+        </div>
+        <div class="buttons">
+            <button id="send_threshold" onclick="send_lim()">ENVIAR LIMITES:</button>
+        </div>
+        <div id="wifi_connect_credentials_errors"></div>
+        <h4 id="wifi_connect_status"></h4>
+    </div>
+
+	<footer>
+        &copy; Creado por Santago Jurado y Mateo Cardona. Todos los derechos reservados 2023.
+    </footer>
+		
+	</body>
+<html>
